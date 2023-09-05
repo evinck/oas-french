@@ -1,9 +1,9 @@
 # Introduction
 
-## About this Workshop
-Oracle Analytics Server is a comprehensive enterprise analytics solution that empowers you to ask any question – of any data – in any environment – on any device.
+## A propos de ce Workshop
+Oracle Analytics Server est une solution complète d'analyse de données pour l'entreprise qui vous permet de poser n'importe quelle question - sur n'importe quelle donnée - dans n'importe quel environement - sur n'importe quel appareil.
 
-This workshop illustrates how organizations worldwide rely on Oracle to manage their data and uncover value across the entire data lifecycle: creating and blending data, self-service data discovery and visual analysis, securely collaborating and sharing analysis across teams, and leveraging embedded augmented analytics and machine learning capabilities to deliver deeper insight.
+Ce workshop illustre comment des organisations mondiales rely on Oracle to manage their data and uncover value across the entire data lifecycle: creating and blending data, self-service data discovery and visual analysis, securely collaborating and sharing analysis across teams, and leveraging embedded augmented analytics and machine learning capabilities to deliver deeper insight.
 
 *Estimated Time:* 2 Hours
 
