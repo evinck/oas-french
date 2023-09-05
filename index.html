@@ -1,541 +1,62 @@
 <!DOCTYPE html>
-<html class="no-js  page-210 app-LIVELABS" lang="en" >
+<html lang="en">
+
 <head>
-  <meta http-equiv="x-ua-compatible" content="IE=edge" />
-  <meta charset="utf-8">
-  <title>Run Workshop - Oracle Analytics Server</title>
-  <base href="/pls/apex/" />
-<link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/app_ui/css/Core.min.css?v=23.1.3" type="text/css" />
-<link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/app_ui/css/Theme-Standard.min.css?v=23.1.3" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Oracle LiveLabs gives you access to Oracle's products to run a wide variety of labs and workshops; allowing you to experience our best technology, live!">
+    <title>Oracle LiveLabs</title>
 
-  <link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/libraries/font-apex/2.2.1/css/font-apex.min.css?v=23.1.3" type="text/css" />
-<link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/themes/theme_42/21.2/css/Core.min.css?v=23.1.3" type="text/css" />
+    <script src="https://oracle-livelabs.github.io/common/redwood-hol/js/jquery-1.11.0.min.js"></script>
+    <script src="https://oracle-livelabs.github.io/common/redwood-hol/js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="https://oracle-livelabs.github.io/common/redwood-hol/js/main.min.js"></script>
 
-  
-  <link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/libraries/oracle-fonts/oraclesans-apex.min.css?v=23.1.3" type="text/css" />
-<link rel="stylesheet" href="https://static.oracle.com/cdn/apex/23.1.1/themes/theme_42/21.2/css/Redwood.min.css?v=23.1.3" type="text/css" />
-
-  <link rel="stylesheet" href="r/dbpm/133/files/static/v470/app-icon.css?version=Release%204.9" type="text/css" />
-<link rel="stylesheet" href="r/dbpm/133/files/static/v470/css/livelabs.min.css?version=Release%204.9" type="text/css" />
-
-  <style type="text/css">
-body {
-  overflow: hidden;
-} 
-
-.rw-layout--contained:not(.rw-layout--edge-to-edge):not(.rw-layout--fixed):not(.rw-layout--foldout) .t-Body-main {
-  width: 100%;
-}
-
-.rw-layout--contained:not(.rw-layout--edge-to-edge):not(.rw-layout--fixed):not(.rw-layout--foldout) {
-    --ut-body-content-max-width: 100%;
-}
-
-.workshop-iframe {
-    width: 100%;
-    height: calc(100vh - 60px);
-    display: block;
-    margin: 0;
-}
-
-.t-Footer {
-    display: none;
-}
-
-
-</style>
-
-  <link rel="apple-touch-icon" href="r/dbpm/133/files/static/v470/icons/app-icon-192.png" /><link rel="icon" href="r/dbpm/133/files/static/v470/icons/app-icon-32.png" /><style type="text/css">
-.app-icon-192 { background-image: url(r/dbpm/133/files/static/v470/icons/app-icon-192.png); }
-.app-icon-32 { background-image: url(r/dbpm/133/files/static/v470/icons/app-icon-32.png); }
-.app-icon, .app-icon-512 { background-image: url(r/dbpm/133/files/static/v470/icons/app-icon-512.png); }.app-icon-192,.app-icon-32,.app-icon,.app-icon-512 { background-repeat: no-repeat; background-size: cover; background-position: center center; }
-</style>
-
-  <meta property="og:type" content="website" /><meta property="og:locale" content="en" /><meta property="og:site_name" content="Oracle LiveLabs" /><meta property="og:title" content="Oracle Analytics Server - Oracle LiveLabs" /><meta property="og:url" content="https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=773" /><meta property="og:image" content="https://apexapps.oracle.com/pls/apex/r/dbpm/133/files/static/v470/icons/app-icon-192.png" /><meta property="og:image:alt" content="Oracle LiveLabs" /><meta property="og:image:type" content="image/png" /><meta property="og:description" content="learn about Oracle Analytics Server and gain hands-on experience.  Oracle Analytics Server is a modern, self-service visualization and augmented analytics platform that provides a full range of capabilities including artificial intelligence (AI) that quickly surfaces key insights in your datasets, data enrichment features that automatically recommend new elements for analysis, machine learning (ML" /><meta name="description" content="learn about Oracle Analytics Server and gain hands-on experience.  Oracle Analytics Server is a modern, self-service visualization and augmented analytics platform that provides a full range of capabilities including artificial intelligence (AI) that quickly surfaces key insights in your datasets, data enrichment features that automatically recommend new elements for analysis, machine learning (ML" /><meta name="twitter:card" content="learn about Oracle Analytics Server and gain hands-on experience.  Oracle Analytics Server is a modern, self-service visualization and augmented analytics platform that provides a full range of capabilities including artificial intelligence (AI) that quickly surfaces key insights in your datasets, data enrichment features that automatically recommend new elements for analysis, machine learning (ML" /><meta name="twitter:image" content="https://apexapps.oracle.com/pls/apex/r/dbpm/133/files/static/v470/icons/app-icon-192.png" /><meta name="twitter:image:alt" content="Oracle LiveLabs" /><meta name="twitter:site" content="Oracle_LiveLabs" /><meta name="twitter:creator" content="Oracle_LiveLabs" /><meta name="twitter:label1" content="Workshop Time" /><meta name="twitter:data1" content="3 hrs" /><meta name="robots" content="all" /><link rel="canonical" href="https://apex.oracle.com/ideas" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="-1" /><meta http-equiv="Cache-Control" content="no-cache" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="text/javascript" src="https://www.oracle.com/assets/truste-oraclelib.js"></script>
-  <script async="async" type="text/javascript" src='//consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie' crossorigin></script>
+    <link rel="stylesheet" href="https://oracle-livelabs.github.io/common/redwood-hol/css/style.min.css" />
+    <link rel="shortcut icon" href="https://oracle-livelabs.github.io/common/redwood-hol/img/favicon.ico" />
 </head>
-<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions no-anim t-PageTemplate--standard   t-PageBody--noContentPadding apex-top-nav apex-icons-fontapex apex-theme-redwood-light-copy-1  rw-layout--contained rw-mode-nav--light rw-mode-body-header--light rw-mode-body--light rw-mode-header--dark"   id="t_PageBody">
-<a href="#main" id="t_Body_skipToContent">Skip to Main Content</a>
-<form action="wwv_flow.accept?p_context=livelabs/run-workshop/108020625288755" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate  autocomplete="off">
-<input type="hidden" name="p_flow_id" value="133" id="pFlowId" /><input type="hidden" name="p_flow_step_id" value="210" id="pFlowStepId" /><input type="hidden" name="p_instance" value="108020625288755" id="pInstance" /><input type="hidden" name="p_page_submission_id" value="127933846445009607171640695031429905934" id="pPageSubmissionId" /><input type="hidden" name="p_request" value="" id="pRequest" /><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit" /><input type="hidden" value="livelabs&#x2F;run-workshop&#x2F;108020625288755" id="pContext" /><input type="hidden" value="127933846445009607171640695031429905934" id="pSalt" />
-<header class="t-Header" id="t_Header" role="banner">
-  
-  <div class="t-Header-branding">
-    <div class="t-Header-controls">
-      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
-    </div>
-    <div class="t-Header-logo">
-      <a href="&#x2F;pls&#x2F;apex&#x2F;r&#x2F;dbpm&#x2F;livelabs&#x2F;home?session=108020625288755" class="t-Header-logo-link"><img src="r&#x2F;dbpm&#x2F;133&#x2F;files&#x2F;static&#x2F;v470&#x2F;oracle_o_logo.png" alt="" class="apex-logo-img" /><span class="apex-logo-text">LiveLabs</span></a>
-      
-    </div>
-    <div class="t-Header-navBar">
-      <div class="t-Header-navBar--start"><div id="global-search-div"  class="u-flex-grow-1 ll-Header-search  t-Form--stretchInputs"><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col  apex-item-wrapper apex-item-wrapper--has-placeholder apex-item-wrapper--auto-complete apex-item-wrapper--has-icon" id="P0_GLOBAL_SEARCH_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
-<label for="P0_GLOBAL_SEARCH" id="P0_GLOBAL_SEARCH_LABEL" class="t-Form-label u-VisuallyHidden"></label>
-</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><a-autocomplete  id="P0_GLOBAL_SEARCH" name="P0_GLOBAL_SEARCH" placeholder="Search&#x20;Workshops&#x20;and&#x20;Sprints..." aria-labelledby="P0_GLOBAL_SEARCH_LABEL" class="apex-item-has-icon" style="border-radius:40px;"  value="" ajax-identifier="SVRFTSBUWVBFfjUxMjB-MjA1NzEwNzYzNzQyNTU3NTk3/_Gm-HZSuV4HjhnP5hes7GKEjeThZ081blE-Ruo5L7k_X5myS_CUbX_kMY-y8ENjOPqnxBFW6KD-YsDi4QMZeCw"  fetch-on-type="true" match-type="contains" min-characters-search="1" max-results="15" cache="true" parents-required="true" ><input readonly class="apex-item-placeholder apex-item-text" value=""><span class="apex-item-icon fa&#x20;fa-search" aria-hidden="true"></span></a-autocomplete></div><span id="P0_GLOBAL_SEARCH_error_placeholder" class="a-Form-error" data-template-id="11047567617944852180_ET"></span></div></div></div></div>
-      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="11047591408354852198"><li class="t-NavigationBar-item icon-only header-search-item">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="#" title="">
-    <span class="t-Icon fa&#x20;fa-search" aria-hidden="true" ></span><span class="t-Button-label">Search</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:apex.theme42.dialog('\u002Fpls\u002Fapex\u002Fr\u002Fdbpm\u002Flivelabs\u002Fenter-event-code?clear=RP\u0026session=108020625288755\u0026dialogCs=zHKcHV3pecUsA5gPR8uTSOB6u8TmlpmpE16brTtOQXjnPBexjNTPCx_NoT22oysHILtXT_Hx7IPwJXShhwjnQw',{title:'Enter Event Code',h:'auto',w:'720',mxw:'960',modal:true,dialog:null,dlgCls:'t-Dialog-page--standard '+''},'',apex.gPageContext$)" title="">
-    <span class="t-Icon fa&#x20;fa-qrcode" aria-hidden="true" ></span><span class="t-Button-label">Event Code</span><span class="t-Button-badge"></span>
-  </a>
-</li><li class="t-NavigationBar-item ">
-  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="/pls/apex/r/dbpm/livelabs/sign-in?p10_page_id=210&session=108020625288755" title="">
-    <span class="t-Icon fa&#x20;fa-sign-in" aria-hidden="true" ></span><span class="t-Button-label">Sign In</span><span class="t-Button-badge"></span>
-  </a>
-</li></ul></div>
-      <div class="t-Header-navBar--end"></div>
-    </div>
-  </div>
-  <div class="t-Header-nav"></div>
-</header>
-<div class="t-Body">
-  
-  <div class="t-Body-main">
-    <div class="t-Body-title" id="t_Body_title"></div>
-    <div class="t-Body-content" id="t_Body_content">
-      <main id="main" class="t-Body-mainContent">
-        <span id="APEX_SUCCESS_MESSAGE" data-template-id="238168408638985238_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="238168408638985238_E" class="apex-page-error u-hidden"></span>
-        <div class="t-Body-fullContent"></div>
-        <div class="t-Body-contentInner"><div class="container">
-<div class="row ">
-<div class="col col-12 apex-col-auto col-start col-end" ><div id="mobile-search-div_parent">
-<div id="mobile-search-div" class="t-DialogRegion u-flex-grow-1  js-dialog-autoheight js-dialog-size720x480 js-popup-pos-after t-Form--noPadding t-Form--stretchInputs js-regionPopup" data-parent-element=#global-search-div style="display:none" title="Mobile&#x20;Search">
-  <div class="t-DialogRegion-wrap">
-    <div class="t-DialogRegion-bodyWrapperOut"><div class="t-DialogRegion-bodyWrapperIn"><div class="t-DialogRegion-body"><div class="container">
-<div class="row ">
-<div class="col col-12 apex-col-auto col-start col-end" ><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col  apex-item-wrapper apex-item-wrapper--has-placeholder apex-item-wrapper--auto-complete apex-item-wrapper--has-icon" id="P0_MOBILE_SEARCH_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-0">
-<label for="P0_MOBILE_SEARCH" id="P0_MOBILE_SEARCH_LABEL" class="t-Form-label u-VisuallyHidden">Mobile Search</label>
-</div><div class="t-Form-inputContainer col col-12"><div class="t-Form-itemWrapper"><a-autocomplete  id="P0_MOBILE_SEARCH" name="P0_MOBILE_SEARCH" placeholder="Search&#x20;Workshops&#x20;and&#x20;Sprints..." aria-labelledby="P0_MOBILE_SEARCH_LABEL" class="apex-item-has-icon" style="border-radius:40px"  value="" ajax-identifier="SVRFTSBUWVBFfjUxMjB-MjQzMzE0MTIyMDk4ODIxNDc0/s8fC4nhjmEheCQR0wC5-Hmo6XQHwyAuYzFm1xtKJckK4-0ezRPmxgD5-XyYG-8hJJUvLl_L4ejzjkk0wm2FUJg"  fetch-on-type="true" match-type="contains" min-characters-search="1" max-results="15" cache="true" parents-required="true" ><input readonly class="apex-item-placeholder apex-item-text" value=""><span class="apex-item-icon fa&#x20;fa-search" aria-hidden="true"></span></a-autocomplete></div><span id="P0_MOBILE_SEARCH_error_placeholder" class="a-Form-error" data-template-id="11047567617944852180_ET"></span></div></div></div>
-</div>
-</div></div></div></div>
-    <div class="t-DialogRegion-buttons">
-       <div class="t-ButtonRegion t-ButtonRegion--dialogRegion">
-         <div class="t-ButtonRegion-wrap">
-           <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"></div></div>
-           <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"></div></div>
-         </div>
-       </div>
-    </div>
-  </div>
-</div>
-</div><input type="hidden" name="P210_WID" id="P210_WID" value="773"><input type="hidden" data-for="P210_WID" value="K02Nh1cE_1MksFc8CLwJSxBdmC_O8NbbrBrVmZYGzBw_SnpUmeyAfo53SGWAMSBC---1yfOfRweFmVVbxbzPlw"><input type="hidden" name="P210_WEC" id="P210_WEC" value=""><input type="hidden" data-for="P210_WEC" value="IAS0QpbC8Zodly8ZsscOnKwT2j1Ief5rUpNIcZTVZl1ClvI2SEuwXYBhu556tobLIls0lEbDmU9_xwbvOYouMw"><input type="hidden" name="GLOBAL_WID" id="GLOBAL_WID" value=""><input type="hidden" data-for="GLOBAL_WID" value="bge1C8KGj3SYViYmcMaWlrB-glHhfLussFv7i_W2Vmb7KheX1vV3MnEZMir071BPbAYo535m-k9EozgwhtDFjA"><input type="hidden" name="P210_TYPE" id="P210_TYPE" value=""><input type="hidden" data-for="P210_TYPE" value="8lGrNjrN821EfoJ6TfOs7r6mI51mJk3qk6cf7637VkH5oV2Ty4A28zdetRfJOhqjtmcKfX79i1meQv75LCLuBg"><input type="hidden" name="P210_WORKSHOP_LOCATION" id="P210_WORKSHOP_LOCATION" value="https:&#x2F;&#x2F;oracle-livelabs.github.io&#x2F;analytics-ai&#x2F;oas&#x2F;workshops&#x2F;freetier&#x2F;index.html?customTrackingParam=:ow:lp:cpo::::RC_WWMK211125P00013:llid=773"><input type="hidden" data-for="P210_WORKSHOP_LOCATION" value="_gOtL11M0s5jeD2P17lx7rOjSXP0rs1mr3SCQ61dCuju01ccSKU9MfT1psXCSfE9-4N45LBuCuTzlcuXb73Z-A"><input type="hidden" name="P210_WORKSHOP_NAME" id="P210_WORKSHOP_NAME" value="Oracle Analytics Server"><input type="hidden" data-for="P210_WORKSHOP_NAME" value="SpAUWysrw5LyVH6k86Sr474B-tLGQyjw6zQaYG5hNlXRaCLVt524iiIyRWieUvCzY8Vo-FeTceKXpsce-KWZSw"></div>
-</div><div class="row wholepage">
-<div class="col col-12 apex-col-auto col-start col-end" ><div id="R241116893871941574"  class=""><iframe src="https&#x3A;&#x2F;&#x2F;oracle-livelabs.github.io&#x2F;analytics-ai&#x2F;oas&#x2F;workshops&#x2F;freetier&#x2F;index.html&#x3F;customTrackingParam&#x3D;&#x3A;ow&#x3A;lp&#x3A;cpo&#x3A;&#x3A;&#x3A;&#x3A;RC_WWMK211125P00013&#x3A;llid&#x3D;773"  allowfullscreen="true" class="workshop-iframe"></iframe>
-</div></div>
-</div>
-</div></div>
-      </main>
-      <footer class="t-Footer" id="t_Footer" role="contentinfo">
-        <div class="t-Footer-body">
-          <div class="t-Footer-content"><div class="container">
-<div class="row ">
-<div class="col col-12 apex-col-auto col-start col-end" ><div id="R195836489154257244"  class=""><html lang="en-US" class="no-js">
-<head>   
-<script src="r/dbpm/133/files/static/v470/artie/web-sdk.js"></script>
-<script src="r/dbpm/133/files/static/v470/artie/artieLocal.min.js" onload="initSdk()"></script>
-<link rel="stylesheet" href="r/dbpm/133/files/static/v470/artie/artie.css">
-</head>
-</html></div></div>
-</div><div class="row ">
-<div class="col col-12 apex-col-auto col-start col-end" ><div id="R205708142177557571"  class=""><!-- Infinity Code - Prod -->
 
-<script type="text/javascript">
-    if ( (oracle.truste.api.getGdprConsentDecision().consentDecision) &&
-     (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
-      oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) ) {
-    document.write('<script src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/oraclelabs/odc.js"><\/script>');
-    document.write('<script src="//www.oracle.com/us/assets/metrics/ora_apex.js"><\/script>');
-}
-</script></div></div>
-</div><div class="row ">
-<div class="col col-12 apex-col-auto col-start col-end" ><div role="region" aria-label="Footer&#x20;with&#x20;links" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--accent14 t-Region--noUI t-Region--scrollBody" id="footer_links" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="footer_links_heading" data-apex-heading>Footer with links</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     
-     <div class="container">
-<div class="row ">
-<div class="col col-1  col-start" ><span class="apex-grid-nbsp">&nbsp;</span></div><div class="col col-2 apex-col-auto " ><div role="region" aria-label="Links_col_1" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--noUI t-Region--scrollBody" id="R11116234920359137312" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="R11116234920359137312_heading" data-apex-heading>Links_col_1</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     <span style="color:black">
-<h3>Resources</h3>
-<a href="https://developer.oracle.com">Developers</a><br>
-<a href="https://www.oracle.com/startup/">Startups</a><br>
-<a href="https://academy.oracle.com/en/oa-web-overview.html">Students &amp; Educators</a>
-</span>
-     
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div><div class="col col-2 apex-col-auto " ><div role="region" aria-label="Links_col_2" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--noUI t-Region--scrollBody" id="R11116234841616137311" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="R11116234841616137311_heading" data-apex-heading>Links_col_2</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     <span style="color:black">
-<h3>Partners</h3>
-<a href="https://www.oracle.com/partnernetwork/">Oracle PartnerNetwork</a>
-<br>
-<a href="https://partner-finder.oracle.com/">Find a Partner</a>
-<br>
-<a href="https://www.oracle.com/opn/index.html">Log in to OPN</a>
-</span>
-     
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div><div class="col col-2 apex-col-auto " ><div role="region" aria-label="Links_col_3" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--noUI t-Region--scrollBody" id="R11116234706898137310" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="R11116234706898137310_heading" data-apex-heading>Links_col_3</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     <span style="color:black">
-<h3>Solutions</h3>
-<a href="https://www.oracle.com/artificial-intelligence/">Artificial Intelligence</a>
-<br>
-<a href="https://www.oracle.com/internet-of-things/">Internet of Things</a>
-<br>
-<a href="https://www.oracle.com/blockchain/">Blockchain</a>
-</span>
-     
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div><div class="col col-2 apex-col-auto " ><div role="region" aria-label="Links_col_4" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--noUI t-Region--scrollBody" id="R11116235561721137318" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="R11116235561721137318_heading" data-apex-heading>Links_col_4</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     <span style="color:black">
-<h3>What's New</h3>
-<a href="https://www.oracle.com/corporate/covid-19.html">Oracle’s response to COVID-19</a>
-<br>
-<a href="https://www.oracle.com/java/technologies/javase-downloads.html">Java SE download</a>
-<br>
-<a href="https://www.oracle.com/cloud/free/">Try Oracle Cloud Free Tier</a>
-</span>
-     
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div><div class="col col-3 apex-col-auto col-end" ><div role="region" aria-label="Links_col_5" class="t-Region t-Region--removeHeader js-removeLandmark t-Region--noUI t-Region--scrollBody" id="R11116235617330137319" >
- <div class="t-Region-header">
-  <div class="t-Region-headerItems t-Region-headerItems--title">
-    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
-    <h2 class="t-Region-title" id="R11116235617330137319_heading" data-apex-heading>Links_col_5</h2>
-  </div>
-  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
- </div>
- <div class="t-Region-bodyWrap">
-   <div class="t-Region-buttons t-Region-buttons--top">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
-   <div class="t-Region-body">
-     <span style="color:black">
-<h3>Contact Us</h3>
-<a href="tel:18006330738">US Sales: +1.800.633.0738</a>
-<br>
-<a href="https://www.oracle.com/corporate/contact/">How can we help?</a>
-<br>
-<a href="https://go.oracle.com/subscriptions">Subscribe to emails</a>
-</span>
-     
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div>
-</div>
-</div>
-   </div>
-   <div class="t-Region-buttons t-Region-buttons--bottom">
-    <div class="t-Region-buttons-left"></div>
-    <div class="t-Region-buttons-right"></div>
-   </div>
- </div>
-</div>
-</div>
-</div>
-</div></div>
-          <div class="t-Footer-apex">
-            <div class="t-Footer-version">Release 4.9</div>
-            <div class="t-Footer-customize"></div>
-            <span class="u-BuiltWithAPEX">Built with <span class="fa fa-heart" role="img" aria-label="love"></span> using <a href="https://apex.oracle.com/" target="_blank" aria-describedby="apex_new_window_txt">Oracle APEX<span id="apex_new_window_txt" aria-hidden="true">(opens in new window)</span></a></span>
-            <span class="copyright-Span">
-                <a href="https://www.oracle.com/legal/copyright.html">© 2023 Oracle</a>  |  
-                <a href="https://www.oracle.com/legal/privacy/">Terms of Use &amp; Privacy</a> | 
-                <div id="teconsent" style="display:inline"></div> | 
-                <a href="https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#12">Ad Choices</a>
-            </span>
+<body>
+    <header class="hol-Header" role="banner">
+        <div class="hol-Header-wrap">
+            <div class="hol-Header-logo"><span>Oracle LiveLabs</span></div>
+            <a href="https://developer.oracle.com/livelabs" target="_blank" id="livelabs" title="Oracle LiveLabs"></a>
+            <div class="hol-Header-actions">
+                <button id="openNav" class="hol-Header-button hol-Header-button--menu rightNav" aria-label="Open Menu"
+                    title="Open Menu">
+                    <span class="hol-Header-toggleIcon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="leftNav">
+            <div id="toc"></div>
+        </div>
+        <div id="contentBox">
+            <main class="hol-Content" id="module-content"></main>
+        </div>
+    </div>
+
+      <footer class="hol-Footer">
+        <a class="hol-Footer-topLink" href="#top">Return to Top</a>
+        <div id="footer-banner"><div class="footer-row">
+          <div class="footer-content"><ul class="footer-links">
+              <li><a href="https://docs.oracle.com/pls/topic/lookup?ctx=en/legal&id=cpyr" target="_blank" aria-label="Open a new window to Oracle legal notices" data-lbl="copyright">© Oracle</a></li>
+              <li><a href="https://www.oracle.com/corporate/index.html" target="_blank" aria-label="Open a new window to learn more about oracle" data-lbl="about-oracle">About Oracle</a></li>
+              <li><a href="https://www.oracle.com/corporate/contact/" target="_blank" aria-label="Open a new window to contact oracle" data-lbl="contact-us">Contact Us</a></li>
+              <li class="footer-links-break"></li>
+              <li><a href="https://docs.oracle.com/en/browseall.html" target="_blank" aria-label="Open a new window to products a-z" data-lbl="products-a-z">Products A-Z</a></li>
+              <li><a href="https://www.oracle.com/legal/privacy/" target="_blank" aria-label="Open a new window to read more about Oracle terms of use and privacy" data-lbl="terms-of-use-and-privacy">Terms of Use & Privacy</a></li>
+              <li><a href="https://www.oracle.com/legal/privacy/privacy-policy.html#11" target="_blank" aria-label="Open a new window to read more about managing Oracle cookie preferences" data-lbl="cookie-preferences">Cookie Preferences</a></li>
+              <li><a href="https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#adchoices" target="_blank" aria-label="Open a new window to ad choices" data-lbl="ad-choices">Ad Choices</a></li>
+              <li class="footer-links-break"></li><li class="last"><a href="https://docs.oracle.com/pls/topic/lookup?ctx=en/legal&id=cpyr" target="_blank" aria-label="Open a new window to Oracle legal notices" data-lbl="copyright">© Oracle</a></li>
+            </ul>
           </div>
         </div>
-        <div class="t-Footer-top">
-          <a href="#top" class="t-Footer-topButton" id="t_Footer_topButton"><span class="a-Icon icon-up-chevron"></span></a>
-        </div>
-      </footer>
-    </div>
-  </div>
-</div>
-<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="&#x5B;&#x5D;">
-<input type="hidden" id="pPageItemsRowVersion" value="" /><input type="hidden" id="pPageItemsProtected" value="UDIxMF9XSUQ6UDIxMF9XRUM6R0xPQkFMX1dJRDpQMjEwX1RZUEU6UDIxMF9XT1JL.,U0hPUF9MT0NBVElPTjpQMjEwX1dPUktTSE9QX05BTUU&#x2F;6-KzbwKBHek_6b_KKf-V8e5FTuGZQ7n2zsjbrufKBBfoDVM2rMWBRIo-kYy6xR7dYrgTZ_1QC10K3skguarREQ" /></form>
-
-
-<script>
-var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F23.1.1\u002F";
-var apex = {env: {APP_USER: "nobody",APP_ID: "133",APP_PAGE_ID: "210",APP_SESSION: "108020625288755",APP_FILES: "r\u002Fdbpm\u002F133\u002Ffiles\u002Fstatic\u002Fv470\u002F",WORKSPACE_FILES: "r\u002Fdbpm\u002Ffiles\u002Fstatic\u002Fv1\u002F",APEX_VERSION: "23.1.3",APEX_BASE_VERSION: "23.1"},
-libVersions:{ckeditor5:"36.0.0",cropperJs:"1.5.13",domPurify:"2.4.3",fullcalendar:"5.11.3",hammer:"2.0.8",jquery:"3.6.4",jqueryUi:"1.13.2",maplibre:"2.4.0",markedJs:"4.2.5",prismJs:"1.29.0",oraclejet:"14.0.0",tinymce:"6.3.1",turndown:"7.1.1",monacoEditor:"0.32.1",lessJs:"4.1.3"}};
-</script>
-<script src="https://static.oracle.com/cdn/apex/23.1.1/libraries/apex/minified/desktop_all.min.js?v=23.1.3"></script>
-<script src="wwv_flow.js_messages?p_app_id=133&p_lang=en&p_version=23.1.3-16372291860594"></script>
-
-<script type="text/javascript">
-apex.da.initDaEventList = function(){
-apex.da.gEventList = [
-{"executionType":"IMMEDIATE","bindEventType":"ready","anyActionsFireOnInit":true,actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"REGION","affectedRegionId":"footer_links",javascriptFunction:apex.da.hide,"action":"NATIVE_HIDE"}]},
-{"triggeringElementType":"ITEM","triggeringElement":"P0_GLOBAL_SEARCH","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringConditionExpression": function() {
-return (event.which == 13
-); },"bindType":"bind","executionType":"IMMEDIATE","bindEventType":"keyup","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var kw = apex.item( "P0_GLOBAL_SEARCH" ).getValue(); 
-  
-var init = kw.indexOf('(ID:');
-var fin = kw.indexOf(')',init);
-var wsid = kw.substr(init+4,fin-init-4);
-
-kw = kw.replace(/[^a-zA-Z0-9\-]+/g," "); // allow hyphens [a-zA-Z0-9-_]
-
-if (wsid != '')
-{ 
-    //we found wsid so lets take to direct page
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":180:" + $v( "pInstance" ) + '::::wid:' + wsid );
-}
-else if (kw != '')
-{
-    //lets do regular search 
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-}
-
-if(event.which == 13)
-{  
-   //capture keypress event
-   apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-//    apex.navigation.redirect("f?p=" + apex.env.APP_ID + ":100:" + apex.env.APP_SESSION + "::::SEARCH:" + kw)
-
-}
-
-apex.item("P0_GLOBAL_SEARCH").setValue(kw);
-
-apex.item("P100_SEARCH").setValue(kw);
-},"action":"NATIVE_JAVASCRIPT_CODE"}]},
-{"triggeringElementType":"ITEM","triggeringElement":"P0_GLOBAL_SEARCH","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringConditionExpression": function() {
-return (this.data && this.data.action === 'ITEM_SELECTED'
-); },"bindType":"bind","executionType":"IMMEDIATE","bindEventType":"input","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var kw = apex.item( "P0_GLOBAL_SEARCH" ).getValue(); 
-  
-var init = kw.indexOf('(ID:');
-var fin = kw.indexOf(')',init);
-var wsid = kw.substr(init+4,fin-init-4);
-
-kw = kw.replace(/[^a-zA-Z0-9\-]+/g," "); // allow hyphens [a-zA-Z0-9-_]
-
-if (wsid != '')
-{ 
-    //we found wsid so lets take to direct page
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":180:" + $v( "pInstance" ) + '::::wid:' + wsid );
-}
-else if (kw != '')
-{
-    //lets do regular search 
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-}
-
-if(event.which == 13)
-{  
-   //capture keypress event
-   apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-//    apex.navigation.redirect("f?p=" + apex.env.APP_ID + ":100:" + apex.env.APP_SESSION + "::::SEARCH:" + kw)
-
-}
-
-apex.item("P0_GLOBAL_SEARCH").setValue(kw);
-
-apex.item("P100_SEARCH").setValue(kw);
-},"action":"NATIVE_JAVASCRIPT_CODE"}]},
-{"triggeringElementType":"ITEM","triggeringElement":"P0_MOBILE_SEARCH","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringConditionExpression": function() {
-return (event.which == 13
-); },"bindType":"bind","executionType":"IMMEDIATE","bindEventType":"keyup","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var kw = apex.item( "P0_MOBILE_SEARCH" ).getValue(); 
-  
-var init = kw.indexOf('(ID:');
-var fin = kw.indexOf(')',init);
-var wsid = kw.substr(init+4,fin-init-4);
-
-kw = kw.replace(/[^a-zA-Z0-9\-]+/g," "); // allow hyphens [a-zA-Z0-9-_]
-
-if (wsid != '')
-{ 
-    //we found wsid so lets take to direct page
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":180:" + $v( "pInstance" ) + '::::wid:' + wsid );
-}
-else if (kw != '')
-{
-    //lets do regular search 
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-}
-
-if(event.which == 13)
-{  
-   //capture keypress event
-   apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-//    apex.navigation.redirect("f?p=" + apex.env.APP_ID + ":100:" + apex.env.APP_SESSION + "::::SEARCH:" + kw)
-
-}
-
-apex.item("P0_MOBILE_SEARCH").setValue(kw);
-
-apex.item("P100_SEARCH").setValue(kw);
-},"action":"NATIVE_JAVASCRIPT_CODE"}]},
-{"triggeringElementType":"ITEM","triggeringElement":"P0_MOBILE_SEARCH","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringConditionExpression": function() {
-return (this.data && this.data.action === 'ITEM_SELECTED'
-); },"bindType":"bind","executionType":"IMMEDIATE","bindEventType":"input","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var kw = apex.item( "P0_MOBILE_SEARCH" ).getValue(); 
-  
-var init = kw.indexOf('(ID:');
-var fin = kw.indexOf(')',init);
-var wsid = kw.substr(init+4,fin-init-4);
-
-kw = kw.replace(/[^a-zA-Z0-9\-]+/g," "); // allow hyphens [a-zA-Z0-9-_]
-
-if (wsid != '')
-{ 
-    //we found wsid so lets take to direct page
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":180:" + $v( "pInstance" ) + '::::wid:' + wsid );
-}
-else if (kw != '')
-{
-    //lets do regular search 
-    apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-}
-
-if(event.which == 13)
-{  
-   //capture keypress event
-   apex.navigation.redirect( "f?p=" + $v( "pFlowId" ) + ":100:" + $v( "pInstance" ) + '::::SEARCH:' + kw );
-//    apex.navigation.redirect("f?p=" + apex.env.APP_ID + ":100:" + apex.env.APP_SESSION + "::::SEARCH:" + kw)
-
-}
-
-apex.item("P0_MOBILE_SEARCH").setValue(kw);
-
-apex.item("P100_SEARCH").setValue(kw);
-},"action":"NATIVE_JAVASCRIPT_CODE"}]},
-{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":".header-search-item a","bindType":"bind","executionType":"IMMEDIATE","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"REGION","affectedRegionId":"mobile-search-div",javascriptFunction:function() {apex.theme.openRegion(this.affectedElements);},"action":"NATIVE_OPEN_REGION"}]}];
-}
-</script>
-
-<script src="https://static.oracle.com/cdn/apex/23.1.1/libraries/apex/minified/widget.stickyWidget.min.js?v=23.1.3"></script>
-<script src="https://static.oracle.com/cdn/apex/23.1.1/themes/theme_42/21.2/js/theme42.min.js?v=23.1.3"></script>
-
-
-<script src="r/dbpm/133/files/static/v470/js/livelabs.min.js?version=Release%204.9"></script>
-<script src="r/dbpm/133/files/static/v470/js/turl.min.js"></script>
-
-  
-
-
-<script src="https://static.oracle.com/cdn/apex/23.1.1/libraries/apex/minified/item.Autocomplete.min.js?v=23.1.3"></script>
-
-
-
-
-<script type="text/javascript">
-apex.jQuery( function() {
-apex.page.init( this, function() {
-try {
-} catch(e) {apex.debug.error(e)};
-apex.item.waitForDelayLoadItems().done(function() {
-try {
-(function(){apex.da.initDaEventList();
-apex.da.init();})();
-apex.theme42.initializePage.noSideCol();
-
-} finally {
-apex.event.trigger(apex.gPageContext$,'apexreadyend');
-};
-});
-});
-});apex.pwa.cleanup( { serviceWorkerPath:'\u002Fpls\u002Fapex\u002Fr\u002Fdbpm\u002Flivelabs\u002Fsw.js?v=23.1.3-16372291860594\u0026lang=en' } );
-</script>
-
+      </div>
+    </footer>
 </body>
+
 </html>
