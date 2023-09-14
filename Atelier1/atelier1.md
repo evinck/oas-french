@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 Cet atelier vous présentera les fonctionnalités clés du libre-service dans Oracle Analytics Server et illustrera ce qui se passe chez JTC America Group, un conglomérat fictif avec des opérations dans de multiples zones géographiques et segments couvrant un vaste portefeuille de produits.
 
@@ -314,6 +314,7 @@ Oracle Analytics Server offre des capacités de mappage avancées et la possibil
     !["myfoldersprofitratioanalysis"](6b83386547db6fedaad876c03237afcf.png)
 
     Vous avez créé avec succès un workbook.
+
 ## Exercice Bonus : Auto Insights
 
 Jusqu'à présent, nous avons créé un classeur sur la base d'un scénario défini et spécifique. Nous avons posé des questions et obtenu des réponses.
