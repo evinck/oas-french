@@ -436,4 +436,3 @@ Lorsque vous créez des DataSet ou ajoutez des DataSet à un Workbook, Oracle An
     Remarquez les changements apportés à votre classeur, et l'icône de l'ampoule est à nouveau blanche. Auto Insights s'exécute automatiquement et réévalue vos données.
 
     L'icône de l'ampoule deviendra jaune et fournira de nouvelles informations une fois l'opération terminée.
-   </details>
