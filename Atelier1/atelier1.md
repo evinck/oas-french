@@ -1,5 +1,4 @@
-<details>
-<summary>1.  **Data Visualization**</summary>
+## Exercice 1 : Data Visualization
 
 
 Pour démarrer notre analyse, nous allons créer un workbook. Imaginez un workbook comme un dashboard. Un workbook peut contenir une variété d'objets, notamment des filtres, des zones de texte et d'autres types de visualisation.
@@ -213,9 +212,7 @@ Pour démarrer notre analyse, nous allons créer un workbook. Imaginez un workbo
 
     !["selectcalendarheatmapvisual"](66d987667eaba5cfdddb2675dbaa4479.png)
 
-</detaisl>
-<details>
-<summary>2. **Calculs personnalisés et utilisation de Cartes**</summary>
+## Exercice 2 : Calculs personnalisés et utilisation de Cartes
 
 Oracle Analytics Server offre des capacités de mappage avancées et la possibilité de créer des calculs personnalisés.
 
@@ -303,9 +300,7 @@ Oracle Analytics Server offre des capacités de mappage avancées et la possibil
     !["myfoldersprofitratioanalysis"](6b83386547db6fedaad876c03237afcf.png)
 
     Vous avez créé avec succès un workbook.
-</detaisl>
-<detaisl>
-<summary>3. **BONUS : Auto Insights**</summary>
+## BONUS : Auto Insights
 
 Jusqu'à présent, nous avons créé un classeur sur la base d'un scénario défini et spécifique. Nous avons posé des questions et obtenu des réponses.
 
