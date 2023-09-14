@@ -1,7 +1,7 @@
-<detail>
+<details>
 <summary>1.  **Data Visualization**</summary>
 
-### Heading
+
 Pour démarrer notre analyse, nous allons créer un workbook. Imaginez un workbook comme un dashboard. Un workbook peut contenir une variété d'objets, notamment des filtres, des zones de texte et d'autres types de visualisation.
 
 1.  **Cliquez** sur *"Create"* en haut à droite.
@@ -213,10 +213,13 @@ Pour démarrer notre analyse, nous allons créer un workbook. Imaginez un workbo
 
     !["selectcalendarheatmapvisual"](66d987667eaba5cfdddb2675dbaa4479.png)
 
-26. **Calculs personnalisés et utilisation de Cartes**
+</detaisl>
+<details>
+<summary>2. **Calculs personnalisés et utilisation de Cartes**</summary>
 
 Oracle Analytics Server offre des capacités de mappage avancées et la possibilité de créer des calculs personnalisés.
-<detail>
+
+
 1.  Dans cet exercice, nous allons créer deux calculs personnalisés, puis utiliser les fonctions de cartographie intégrées en libre-service d'Oracle pour analyser l'état et le bénéfice moyen par client.
 
     Commençons par ajouter un nouveau canevas.
@@ -300,8 +303,9 @@ Oracle Analytics Server offre des capacités de mappage avancées et la possibil
     !["myfoldersprofitratioanalysis"](6b83386547db6fedaad876c03237afcf.png)
 
     Vous avez créé avec succès un workbook.
-
-12. **BONUS : Auto Insights**
+</detaisl>
+<detaisl>
+<summary>3. **BONUS : Auto Insights**</summary>
 
 Jusqu'à présent, nous avons créé un classeur sur la base d'un scénario défini et spécifique. Nous avons posé des questions et obtenu des réponses.
 
@@ -423,3 +427,4 @@ Lorsque vous créez des DataSet ou ajoutez des DataSet à un Workbook, Oracle An
     Remarquez les changements apportés à votre classeur, et l'icône de l'ampoule est à nouveau blanche. Auto Insights s'exécute automatiquement et réévalue vos données.
 
     L'icône de l'ampoule deviendra jaune et fournira de nouvelles informations une fois l'opération terminée.
+   </details>
