@@ -11,12 +11,13 @@
       "title": "Atelier 1: Self-Service Data Visualization",
       "description": "Atelier1",
       "filename": "Atelier1/atelier1.md"
-    }
+    },
     {
       "title": "Atelier 2: Préparation de la donnée et enrichissements",
       "description": "Atelier2",
       "filename": "Atelier2/atelier2.md"
-    }    {
+    },   
+    {
       "title": "Atelier 3: Analytique Augmentée avec le Machine Learning",
       "description": "Atelier3",
       "filename": "Atelier3/atelier3.md"
