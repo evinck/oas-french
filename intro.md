@@ -3,7 +3,7 @@
 ## A propos de cet atelier
 Oracle Analytics Server est une solution complète d'analyse de données pour l'entreprise qui vous permet de poser n'importe quelle question - sur n'importe quelle donnée - dans n'importe quel environnement - sur n'importe quel appareil.
 
-Cet atelier illustre comment des organisations du monde entier comptent sur Oracle pour gérer leurs données et découvrir de la valeur tout au long du cycle de vie des données : création et fusion de données, découverte de données en libre-service et analyse visuelle, collaboration sécurisée et partage d'analyses entre les équipes, ainsi que l'utilisation de capacités d'analyse augmentée intégrées et de l'apprentissage automatique pour fournir des informations plus approfondies.
+Cet atelier illustre comment des organisations du monde entier comptent sur Oracle pour gérer leurs données et découvrir de la valeur tout au long du cycle de vie des données : création et fusion de données, découverte de données en libre-service et analyse visuelle, collaboration sécurisée et partage d'analyses entre les équipes, ainsi que l'utilisation de capacités d'analyse augmentée intégrées et de l'apprentissage automatique (Machine Learning) pour fournir des informations plus approfondies.
 
 *Durée estimée:* 2 heures
 
@@ -24,7 +24,7 @@ Dans cet atelier, vous allez :
 
 
 ### Prérequis
--	Un compte "Oracle Free Tier, Always Free, Paid, or LiveLabs Cloud Account
+-	Un compte Oracle Free Tier, Always Free, Paid, ou LiveLabs.
 
 
 ## Learn More
@@ -35,7 +35,7 @@ Dans cet atelier, vous allez :
 
 
 ## Remerciements
-* **Authors** - Diane Grace, Manager, Analytics Platform Specialist Team, NA Technology
-* **Contributors** - Linda Dest, John H. Miller, Malia German, Bronze Martin, and Rene Fontcha
-* **Last Updated By/Date** - Rene Fontcha, LiveLabs Platform Lead, NA Technology, April 2022
+* **Auteurs** - Diane Grace, Manager, Analytics Platform Specialist Team, NA Technology
+* **Contributeurs** - Linda Dest, John H. Miller, Malia German, Bronze Martin, and Rene Fontcha
+* **Dernière mise à jour** - Rene Fontcha, LiveLabs Platform Lead, NA Technology
 * **Adaptation** - Nicolas Desirat , Eric Vinck, September 2023
