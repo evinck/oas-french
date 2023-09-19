@@ -27,7 +27,7 @@ Dans cet atelier, vous allez :
 -	Un compte Oracle Free Tier, Always Free, Paid, ou LiveLabs.
 
 
-## Learn More
+## Documentation
 * [Documentation Oracle Analytics](https://www.oracle.com/fr/business-analytics/)
 * [Documentation Plateforme Analytics Oracle](https://www.oracle.com/fr/business-analytics/analytics-platform/)
 * [Documentation Oracle Analytics Cloud](https://docs.oracle.com/fr-fr/iaas/analytics-cloud/index.html)
