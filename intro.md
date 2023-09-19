@@ -1,40 +1,41 @@
 # Introduction
 
-## A propos de ce Workshop
-Oracle Analytics Server est une solution complète d'analyse de données pour l'entreprise qui vous permet de poser n'importe quelle question - sur n'importe quelle donnée - dans n'importe quel environement - sur n'importe quel appareil.
+## A propos de cet atelier
+Oracle Analytics Server est une solution complète d'analyse de données pour l'entreprise qui vous permet de poser n'importe quelle question - sur n'importe quelle donnée - dans n'importe quel environnement - sur n'importe quel appareil.
 
-Ce workshop illustre comment des organisations mondiales rely on Oracle to manage their data and uncover value across the entire data lifecycle: creating and blending data, self-service data discovery and visual analysis, securely collaborating and sharing analysis across teams, and leveraging embedded augmented analytics and machine learning capabilities to deliver deeper insight.
+Cet atelier illustre comment des organisations du monde entier comptent sur Oracle pour gérer leurs données et découvrir de la valeur tout au long du cycle de vie des données : création et fusion de données, découverte de données en libre-service et analyse visuelle, collaboration sécurisée et partage d'analyses entre les équipes, ainsi que l'utilisation de capacités d'analyse augmentée intégrées et de l'apprentissage automatique pour fournir des informations plus approfondies.
 
-*Estimated Time:* 2 Hours
+*Durée estimée:* 2 heures
 
-### About Product/Technology
-Oracle Analytics Server helps organizations discover deep, unique insights from their data through augmented analytics.  Streamline data access and data preparation with machine learning. Provide self-service analytics enabling users to build compelling visual stories and to make highly informed decisions confidently.
+### À propos du produit/technologie
+Oracle Analytics Server aide les organisations à découvrir des informations approfondies et uniques à partir de leurs données grâce à l'analyse augmentée. Simplifiez l'accès aux données et la préparation des données avec l'apprentissage automatique (Machine Learning). Fournissez des analyses en libre-service permettant aux utilisateurs de créer des récits visuels convaincants et de prendre des décisions très éclairées en toute confiance.
 
   [](youtube:Dk9vLite0MA)
 
-### Objectives
-The workshop illustrates how organizations worldwide rely on Oracle to manage their data and uncover value across the entire data lifecycle: creating and blending data, self-service data visualization and analysis, securely collaborating and sharing analysis across teams, and leveraging embedded augmented analytics and machine learning capabilities to deliver the fastest time to insight across all of your data.
+Dans cet atelier, vous allez :
 
-In this workshop you will:
-  -	Review the key features of self-service analytics
-  -	Tell a story regarding what is happening at JTC America’s Group
-  -	Explore a variety of intuitive and interactive visualization charts and create visualizations
-  - Prepare, enrich and transform your data before you make it available for analysis 
-  -	Leverage augmented analytics capabilities to accelerate root cause analysis
-  -	Leverage machine learning algorithms to predict attrition
-  -	Explore custom visual extensions in the Oracle Analytics Library
+- Examiner les principales fonctionnalités de l'analyse en libre-service
+- Raconter ce qui se passe au sein de JTC America's Group.
+- Explorer une variété de graphiques de visualisation intuitifs et interactifs et créer des visualisations.
+- Préparer, enrichir et transformer vos données avant de les rendre disponibles pour l'analyse.
+- Utiliser les capacités d'analyse augmentée pour accélérer l'analyse des causes profondes.
+- Utiliser des algorithmes d'apprentissage automatique pour prédire l'attrition.
+- Explorer les extensions visuelles personnalisées dans la bibliothèque d'Oracle Analytics.
 
 
-### Prerequisites
--	An Oracle Free Tier, Always Free, Paid, or LiveLabs Cloud Account
+### Prérequis
+-	Un compte "Oracle Free Tier, Always Free, Paid, or LiveLabs Cloud Account
 
 
 ## Learn More
-* [Oracle Analytics Server Documentation](https://docs.oracle.com/en/middleware/bi/analytics-server/index.html)
-* [https://www.oracle.com/business-analytics/analytics-server.html](https://www.oracle.com/business-analytics/analytics-server.html)
-* [https://www.oracle.com/business-analytics](https://www.oracle.com/business-analytics)
+* [Documentation Oracle Analytics](https://www.oracle.com/fr/business-analytics/)
+* [Documentation Plateforme Analytics Oracle](https://www.oracle.com/fr/business-analytics/analytics-platform/)
+* [Documentation Oracle Analytics Cloud](https://docs.oracle.com/fr-fr/iaas/analytics-cloud/index.html)
+* [Documentation Oracle Analytics Server](https://www.oracle.com/business-analytics/analytics-server.html)
 
-## Acknowledgements
+
+## Remerciements
 * **Authors** - Diane Grace, Manager, Analytics Platform Specialist Team, NA Technology
 * **Contributors** - Linda Dest, John H. Miller, Malia German, Bronze Martin, and Rene Fontcha
 * **Last Updated By/Date** - Rene Fontcha, LiveLabs Platform Lead, NA Technology, April 2022
+* **Adaptation** - Nicolas Desirat , Eric Vinck, September 2023
