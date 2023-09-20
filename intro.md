@@ -23,10 +23,6 @@ Dans cet atelier, vous allez :
 - Explorer les extensions visuelles personnalisées dans la bibliothèque d'Oracle Analytics.
 
 
-### Prérequis
--	Un compte Oracle Free Tier, Always Free, Paid, ou LiveLabs.
-
-
 ## Documentation
 * [Documentation Oracle Analytics](https://www.oracle.com/fr/business-analytics/)
 * [Documentation Plateforme Analytics Oracle](https://www.oracle.com/fr/business-analytics/analytics-platform/)
